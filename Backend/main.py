@@ -55,3 +55,7 @@ def get_summary_stats():
         "average_downtime_days": round(avg_downtime_days, 2),
         "last_updated": all_data[0]["recorded_at"] if total > 0 else "No data"
     }
+@app.get("/")
+def root():
+    print("Root endpoint hit")
+    return {"message": "PRTG Monitoring API is running"}
