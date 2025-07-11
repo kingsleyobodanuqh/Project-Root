@@ -1,60 +1,24 @@
-Critical Sites and Downtimes as at 05:31PM on Thursday 10 July 2025
+Critical Sites and Downtimes as at 11:21AM on Friday 11 July 2025
 
-Test
-1. Library Mall 1F Main = 0 d 7 h 55 m ago
-2. Library Mall 1F-Sw2-Wifi = 0 d 7 h 55 m ago
-3. Library Mall 1F-Sw3 = 0 d 7 h 55 m ago
-4. Library Mall 1F-Sw4 = 0 d 7 h 55 m ago
-5. Library Mall 1F-Sw5 = 0 d 7 h 55 m ago
-6. Library Mall 4F-Sw4-Wifi = 0 d 6 h 54 m ago
+CCTV SWITCHES
+1. Ayeduase - Gate = 1 d 23 h 19 m ago
+2. Library - Intersection = 3 d 18 h 39 m ago
+3. Old Police Station - Gate = 1 d 1 h 23 m ago
 
-Hall Wifi
-1. Qnx-Hall_Switch1_PortersLodge = 7 d 1 h 39 m ago
-2. Qnx-Hall_Switch2_WestWing = 7 d 1 h 38 m ago
-3. Qnx-Hall_Switch3_EastWing = 7 d 1 h 39 m ago
-4. Qnx-Hall_Switch4_Annex = 7 d 1 h 39 m ago
-5. Repu-Hall_Switch4_South_SRC = 0 d 6 h 38 m ago
-6. University-Hall_Switch4_Annex = 0 d 8 h 55 m ago
+VOIP SERVERS
+1. INDEPENDENCE HALL = 2 d 14 h 16 m ago
+2. UG VOIP SERVER = 0 d 20 h 33 m ago
 
-Faculty LAN
-1. AGRA = 0 d 0 h 8 m ago
-2. COSCOM Computer Lab 1 (COS) = 0 d 0 h 4 m ago
-3. COSCOM Computer Lab 2 (COS) = 0 d 0 h 4 m ago
-4. Eng_Lab ~ DC = 0 d 6 h 14 m ago
-5. New KSB Blk F = 0 d 7 h 27 m ago
-6. Physics ~ DC = 0 d 0 h 4 m ago
-7. SF 26 Computer Lab (COS) = 0 d 0 h 4 m ago
-
-CCTV
-1. COS Lab FF12 = 0 d 0 h 4 m ago
-2. Hall 7 = 0 d 6 h 35 m ago
+RESIDENTIAL WIFI
+1. Qnx-Hall_Switch1_PortersLodge = 7 d 19 h 27 m ago
+2. Qnx-Hall_Switch2_WestWing = 7 d 19 h 27 m ago
+3. Qnx-Hall_Switch3_EastWing = 7 d 19 h 28 m ago
+4. Qnx-Hall_Switch4_Annex = 7 d 19 h 27 m ago
+5. University-Hall_Switch4_Annex = 1 d 2 h 44 m ago
 
 Faculty Wifi
-1. Agra_Vodafone_Main_Switch = 0 d 0 h 36 m ago
-2. Agric_Main_Vodafone_Switch_1 = 0 d 0 h 35 m ago
-3. Arch_Studio_1_Vodafone_Switch = 0 d 5 h 34 m ago
-4. Arch_Studio_2_Vodafone_Main_Switch = 7 d 14 h 52 m ago
-5. CCB_Vodafone_Main_Switch = 0 d 0 h 36 m ago
-6. COS_Vodafone_Main_Switch = 0 d 0 h 32 m ago
-7. COS_Vodafone_Switch_2_Huawei_Lab = 0 d 0 h 32 m ago
-8. COS_Vodafone_Switch_3_Common_Rm = 0 d 0 h 32 m ago
-9. Eng_Lab_Vodafone_CompEngLab = 0 d 8 h 31 m ago
-10. Eng_Lab_Vodafone_Elect_Switch = 0 d 6 h 42 m ago
-11. Eng_Lab_Vodafone_Switch_Energy_Center_Near KSB = 0 d 8 h 31 m ago
-12. Exam_Block_Vodafone_Main_Switch = 0 d 0 h 32 m ago
-13. Exam_Block_Vodafone_Main_Switch = 0 d 0 h 32 m ago
-14. Exam_Block_Vodafone_Main_Switch = 0 d 0 h 32 m ago
-15. ICIL_Vodafone_Main_Switch = 0 d 0 h 46 m ago
-16. Physics_Vodafone_Main_Switch = 0 d 0 h 32 m ago
-17. Physics_Vodafone_Sw2 = 0 d 0 h 32 m ago
-18. SMS_Vodafone_Switch_2 = 0 d 0 h 36 m ago
-
-Residential LAN
-1. Hall 7 ~ DC = 0 d 7 h 52 m ago
-
-ADMIN_NETWORKS
-1. JHS New Blk ~ DC = 0 d 5 h 17 m ago
-2. JHS_Staff_CRoom = 0 d 8 h 3 m ago
-3. Library Mall 1F = 0 d 7 h 56 m ago
-4. Transport CBS = 0 d 0 h 10 m ago
+1. Animal_Science_Main_Vodafone_Switch_2 = 0 d 18 h 10 m ago
+2. Arch_Studio_1_Vodafone_Switch = 0 d 23 h 23 m ago
+3. Arch_Studio_2_Vodafone_Main_Switch = 8 d 8 h 40 m ago
+4. ICIL_Vodafone_Main_Switch = 0 d 0 h 32 m ago
 

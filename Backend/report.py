@@ -12,16 +12,27 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 requests.packages.urllib3.disable_warnings()
 
 prtg_servers = [
-    {"ip": "10.10.1.110", "username": "prtgadmin", "password": "Kozmik123", "group_name": "Test"},
-    {"ip": "10.10.1.116", "username": "prtgadmin", "password": "Kozmik123", "group_name": "Hall Wifi"},
-    {"ip": "10.10.1.117", "username": "prtgadmin", "password": "Kozmik123", "group_name": "Faculty LAN"},
-    {"ip": "10.10.1.118", "username": "prtgadmin", "password": "Kozmik123", "group_name": "CCTV"},
-    {"ip": "10.10.1.120", "username": "prtgadmin", "password": "Kozmik123", "group_name": "Faculty Wifi"},
-    {"ip": "10.10.1.122", "username": "prtgadmin", "password": "Kozmik123", "group_name": "Residential LAN"},
+    {"ip": "10.10.1.110", "username": "prtgadmin", "password": "Kozmik123", "group_name": "Group 1"},
+    {"ip": "10.10.1.111", "username": "prtgadmin", "password": "Kozmik123", "group_name": "Group 2"},
+    {"ip": "10.10.1.112", "username": "prtgadmin", "password": "Kozmik123", "group_name": "Group 3"},
+    {"ip": "10.10.1.113", "username": "prtgadmin", "password": "Kozmik123", "group_name": "CCTV SWITCHES"},
+    {"ip": "10.10.1.114", "username": "prtgadmin", "password": "Kozmik123", "group_name": "VOIP SERVERS"},
     {"ip": "10.10.1.115", "username": "prtgadmin", "password": "Kozmik123", "group_name": "Data center prtg"},
-    {"ip": "10.10.1.123", "username": "prtgadmin", "password": "Kozmik123", "group_name": "Servers"},
-    {"ip": "10.10.1.119", "username": "prtgadmin", "password": "Kozmik123", "group_name": "MASTER_CARD"},
-    {"ip": "10.10.1.124", "username": "prtgadmin", "password": "Kozmik123", "group_name": "ADMIN_NETWORKS"},
+    {"ip": "10.10.1.116", "username": "prtgadmin", "password": "Kozmik123", "group_name": "RESIDENTIAL WIFI"},
+    {"ip": "10.10.1.117", "username": "prtgadmin", "password": "Kozmik123", "group_name": "Faculty LAN"},
+    {"ip": "10.10.1.118", "username": "prtgadmin", "password": "Kozmik123", "group_name": "CCTV NVR"},
+    {"ip": "10.10.1.119", "username": "prtgadmin", "password": "Kozmik123", "group_name": "MASTERCARD SWITCHES"},
+    {"ip": "10.10.1.120", "username": "prtgadmin", "password": "Kozmik123", "group_name": "Faculty Wifi"},
+    {"ip": "10.10.1.121", "username": "prtgadmin", "password": "Kozmik123", "group_name": "Group 12"},
+    {"ip": "10.10.1.122", "username": "prtgadmin", "password": "Kozmik123", "group_name": "RESIDENTIAL LAN"},
+    {"ip": "10.10.1.123", "username": "prtgadmin", "password": "Kozmik123", "group_name": "SERVERS AND SWITCHES"},
+    {"ip": "10.10.1.124", "username": "prtgadmin", "password": "Kozmik123", "group_name": "ADMIN NETWORKS"},
+    {"ip": "10.10.1.125", "username": "prtgadmin", "password": "Kozmik123", "group_name": "Group 16"},
+    {"ip": "10.10.1.126", "username": "prtgadmin", "password": "Kozmik123", "group_name": "ISPs"},
+    {"ip": "10.10.1.127", "username": "prtgadmin", "password": "Kozmik123", "group_name": "Group 18"},
+    {"ip": "10.10.1.128", "username": "prtgadmin", "password": "Kozmik123", "group_name": "Group 19"},
+    {"ip": "10.10.1.129", "username": "prtgadmin", "password": "Kozmik123", "group_name": "Group 20"},
+    {"ip": "10.10.1.130", "username": "prtgadmin", "password": "Kozmik123", "group_name": "Group 21"},
 ]
 
 def fetch_sensors_with_last_up(prtg_ip, username, password):
