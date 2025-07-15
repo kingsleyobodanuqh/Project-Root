@@ -1,24 +1,29 @@
-Critical Sites and Downtimes as at 11:21AM on Friday 11 July 2025
+Critical Sites and Downtimes as at 09:38AM on Tuesday 15 July 2025
 
 CCTV SWITCHES
-1. Ayeduase - Gate = 1 d 23 h 19 m ago
-2. Library - Intersection = 3 d 18 h 39 m ago
-3. Old Police Station - Gate = 1 d 1 h 23 m ago
-
-VOIP SERVERS
-1. INDEPENDENCE HALL = 2 d 14 h 16 m ago
-2. UG VOIP SERVER = 0 d 20 h 33 m ago
+1. Ayeduase - Gate = 3 d 21 h 21 m ago
+2. Independence Hall - Junction = 0 d 14 h 5 m ago
+3. Library - Intersection = 3 d 19 h 35 m ago
+4. Main Entrance - Roundabout = 1 d 8 h 37 m ago
 
 RESIDENTIAL WIFI
-1. Qnx-Hall_Switch1_PortersLodge = 7 d 19 h 27 m ago
-2. Qnx-Hall_Switch2_WestWing = 7 d 19 h 27 m ago
-3. Qnx-Hall_Switch3_EastWing = 7 d 19 h 28 m ago
-4. Qnx-Hall_Switch4_Annex = 7 d 19 h 27 m ago
-5. University-Hall_Switch4_Annex = 1 d 2 h 44 m ago
+1. SENIOR_STAFF_SW_1 = 1 d 22 h 49 m ago
+2. University-Hall_Switch4_Annex = 5 d 1 h 1 m ago
+
+Faculty LAN
+1. SF 26 Computer Lab (COS) = 0 d 16 h 17 m ago
+
+CCTV NVR
+1. VC Lodge = 1 d 21 h 49 m ago
 
 Faculty Wifi
-1. Animal_Science_Main_Vodafone_Switch_2 = 0 d 18 h 10 m ago
-2. Arch_Studio_1_Vodafone_Switch = 0 d 23 h 23 m ago
-3. Arch_Studio_2_Vodafone_Main_Switch = 8 d 8 h 40 m ago
-4. ICIL_Vodafone_Main_Switch = 0 d 0 h 32 m ago
+1. Animal_Science_Main_Vodafone_Switch_2 = 0 d 15 h 46 m ago
+2. Arch_Studio_1_Vodafone_Switch = 4 d 21 h 41 m ago
+3. Arch_Studio_2_Vodafone_Main_Switch = 12 d 6 h 58 m ago
+4. BioScience_Vodafone_Switch_1 = 0 d 22 h 46 m ago
+5. BioScience_Vodafone_Switch_2 = 0 d 22 h 46 m ago
+6. CEDRES_Vodafone_Main_Switch = 0 d 18 h 19 m ago
+7. Chemistry_Vodafone_Switch_2 = 1 d 19 h 6 m ago
+8. Eng_Lab_Vodafone_Switch_Energy_Center_Near KSB = 0 d 0 h 47 m ago
+9. Library_Vodafone_Switch_Discussion_Area = 0 d 1 h 32 m ago
 

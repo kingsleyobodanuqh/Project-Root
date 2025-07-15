@@ -22,7 +22,7 @@ def root():
 @app.post("/generate-report")
 def generate_report():
     try:
-        subprocess.run(["python", "backend/script.py"], check=True)
+        subprocess.run(["python", "backend/report.py"], check=True)
         return {"status": "success", "message": "Report generated and stored in Supabase"}
     except subprocess.CalledProcessError as e:
         return {"status": "error", "message": str(e)}
@@ -55,7 +55,3 @@ def get_summary_stats():
         "average_downtime_days": round(avg_downtime_days, 2),
         "last_updated": all_data[0]["recorded_at"] if total > 0 else "No data"
     }
-@app.get("/")
-def root():
-    print("Root endpoint hit")
-    return {"message": "PRTG Monitoring API is running"}
