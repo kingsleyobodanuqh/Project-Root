@@ -125,23 +125,8 @@ def generate_critical_sites_report(combined_report_path, critical_sites_report_p
 if __name__ == "__main__":
     combined_report_path = "Full_PRTG_Report.txt"
     critical_sites_report_path = "Critical_Sites_Report.txt"
-
-    while True:
-        print("1. Generate full report and critical sites report")
-        print("2. Exit")
-        choice = input("Enter your choice: ")
-
-        if choice == "1":
-            write_combined_report(prtg_servers)
-            generate_critical_sites_report(combined_report_path, critical_sites_report_path)
-
-            print("\nFirst few lines of the critical sites report:")
-            with open(critical_sites_report_path, 'r') as file:
-                print(file.read(5000))
-
-        elif choice == "2":
-            print("Exiting the program. Goodbye!")
-            break
-
-        else:
-            print("Invalid choice. Please enter 1 or 2.")
+    write_combined_report(prtg_servers)
+    generate_critical_sites_report(combined_report_path, critical_sites_report_path)
+    print("\nFirst few lines of the critical sites report:")
+    with open(critical_sites_report_path, 'r') as file:
+        print(file.read(5000))

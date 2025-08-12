@@ -1,7 +1,7 @@
 # backend/main.py
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from .supabase_config import supabase
+from supabase_config import supabase
 import subprocess
 
 app = FastAPI()
@@ -15,6 +15,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+subprocess.run(["python", "report.py"], check=True)
+subprocess.run(["python", "report.py"], check=True)
+
 @app.get("/")
 def root():
     return {"message": "PRTG Monitoring API is running"}
@@ -22,7 +25,7 @@ def root():
 @app.post("/generate-report")
 def generate_report():
     try:
-        subprocess.run(["python", "backend/report.py"], check=True)
+        subprocess.run(["python", "report.py"], check=True)  # Corrected path
         return {"status": "success", "message": "Report generated and stored in Supabase"}
     except subprocess.CalledProcessError as e:
         return {"status": "error", "message": str(e)}

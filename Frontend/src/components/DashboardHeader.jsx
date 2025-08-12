@@ -3,13 +3,22 @@ import React, { useEffect, useState } from "react";
 function DashboardHeader() {
   const [stats, setStats] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null); // Add error state
 
   const fetchStats = () => {
     setLoading(true);
+    setError(null); // Reset error
     fetch("http://localhost:8000/reports/stats")
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) throw new Error("Failed to fetch stats");
+        return res.json();
+      })
       .then((data) => {
         setStats(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        setError(err.message);
         setLoading(false);
       });
   };
@@ -31,6 +40,8 @@ function DashboardHeader() {
   }, []);
 
   if (loading) return <p className="text-gray-500">Loading stats...</p>;
+  if (error) return <p className="text-red-500">Error: {error}</p>;
+  if (!stats) return <p className="text-gray-500">No stats available.</p>;
 
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">

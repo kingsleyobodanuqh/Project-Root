@@ -1,0 +1,24 @@
+Critical Sites and Downtimes as at 11:03AM on Friday 18 July 2025
+
+CCTV SWITCHES
+1. Ayeduase - Gate = 0 d 18 h 15 m ago
+2. Independence Hall - Junction = 0 d 21 h 27 m ago
+3. Library - Intersection = 0 d 20 h 21 m ago
+4. Main Entrance - Roundabout = 4 d 10 h 2 m ago
+
+VOIP SERVERS
+1. UG VOIP SERVER = 0 d 18 h 51 m ago
+
+RESIDENTIAL WIFI
+1. SENIOR_STAFF_SW_1 = 5 d 0 h 14 m ago
+
+CCTV NVR
+1. VC Lodge = 4 d 23 h 14 m ago
+
+Faculty Wifi
+1. Animal_Science_Main_Vodafone_Switch_2 = 0 d 16 h 45 m ago
+2. Eng_Lab_Vodafone_Switch_Energy_Center_Near KSB = 3 d 2 h 12 m ago
+
+ADMIN NETWORKS
+1. Fire Service & Sports CBS = 0 d 0 h 4 m ago
+
