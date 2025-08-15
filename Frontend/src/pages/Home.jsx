@@ -13,19 +13,34 @@ function Home() {
   };
 
   return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold mb-2">Network Monitoring Dashboard</h1>
+    <div style={{ maxWidth: 1200, margin: '0 auto', padding: '40px 16px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 32 }}>
+        <h1 style={{ fontSize: 36, fontWeight: 800, color: '#22223b', margin: 0, textAlign: 'left', letterSpacing: '-1px' }}>
+          Network Monitoring Dashboard
+        </h1>
+        <div>
+          <RunReportButton onSuccess={handleRefresh} />
+        </div>
+      </div>
 
-      {/* Only one SummaryCards */}
-      <SummaryCards />
+      {/* Summary Cards 2x2 grid, centered */}
+      <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+        <SummaryCards layout="2x2" />
+      </div>
 
-      <RunReportButton onSuccess={handleRefresh} />
+      <h2 style={{ fontSize: 24, fontWeight: 700, color: '#22223b', margin: '48px 0 16px 0', textAlign: 'center', letterSpacing: '-0.5px' }}>
+        Live Device Reports
+      </h2>
+      <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+        <FullReportTable key={refresh} />
+      </div>
 
-      <h2 className="text-xl font-semibold mt-6">Live Device Reports</h2>
-      <FullReportTable key={refresh} />
-
-      <h2 className="text-xl font-semibold mt-6">Critical Devices</h2>
-      <CriticalReportTable />
+      <h2 style={{ fontSize: 24, fontWeight: 700, color: '#ef4444', margin: '48px 0 16px 0', textAlign: 'center', letterSpacing: '-0.5px' }}>
+        Critical Devices
+      </h2>
+      <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+        <CriticalReportTable />
+      </div>
     </div>
   );
 }

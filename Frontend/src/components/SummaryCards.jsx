@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-function SummaryCards() {
+function SummaryCards({ layout }) {
   const [stats, setStats] = useState(null);
 
   useEffect(() => {
@@ -14,25 +14,45 @@ function SummaryCards() {
       });
   }, []);
 
-  if (!stats) return <p className="text-gray-500">Loading summary...</p>;
+  if (!stats) return <p style={{ color: '#64748b' }}>Loading summary...</p>;
 
+  const gridStyle = layout === "2x2"
+    ? {
+        display: 'grid',
+        gridTemplateColumns: 'repeat(2, 1fr)',
+        gridTemplateRows: 'repeat(2, 1fr)',
+        gap: 24,
+        margin: '32px 0',
+        maxWidth: 600,
+        width: '100%',
+        alignItems: 'stretch',
+        justifyItems: 'center',
+      }
+    : {
+        display: 'grid',
+        gridTemplateColumns: 'repeat(4, 1fr)',
+        gap: 24,
+        margin: '32px 0',
+        alignItems: 'stretch',
+        flexWrap: 'wrap',
+      };
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-6">
-      <div className="bg-white rounded shadow p-4 text-center">
-        <h3 className="text-sm font-medium text-gray-500">Total Devices</h3>
-        <p className="text-xl font-bold text-blue-600">{stats.total_devices}</p>
+    <div style={gridStyle}>
+      <div className="card" style={{ textAlign: 'center', width: '100%' }}>
+        <h3 style={{ fontSize: 16, fontWeight: 500, color: '#64748b', margin: 0 }}>Total Devices</h3>
+        <p style={{ fontSize: 24, fontWeight: 700, color: '#6366f1', margin: 0 }}>{stats.total_devices}</p>
       </div>
-      <div className="bg-white rounded shadow p-4 text-center">
-        <h3 className="text-sm font-medium text-gray-500">Critical Devices</h3>
-        <p className="text-xl font-bold text-red-500">{stats.critical_devices}</p>
+      <div className="card" style={{ textAlign: 'center', width: '100%' }}>
+        <h3 style={{ fontSize: 16, fontWeight: 500, color: '#64748b', margin: 0 }}>Critical Devices</h3>
+        <p style={{ fontSize: 24, fontWeight: 700, color: '#ef4444', margin: 0 }}>{stats.critical_devices}</p>
       </div>
-      <div className="bg-white rounded shadow p-4 text-center">
-        <h3 className="text-sm font-medium text-gray-500">Avg. Downtime (days)</h3>
-        <p className="text-xl font-bold text-yellow-600">{stats.average_downtime_days}</p>
+      <div className="card" style={{ textAlign: 'center', width: '100%' }}>
+        <h3 style={{ fontSize: 16, fontWeight: 500, color: '#64748b', margin: 0 }}>Avg. Downtime (days)</h3>
+        <p style={{ fontSize: 24, fontWeight: 700, color: '#eab308', margin: 0 }}>{stats.average_downtime_days}</p>
       </div>
-      <div className="bg-white rounded shadow p-4 text-center">
-        <h3 className="text-sm font-medium text-gray-500">Last Updated</h3>
-        <p className="text-sm font-semibold text-gray-700">{stats.last_updated}</p>
+      <div className="card" style={{ textAlign: 'center', width: '100%' }}>
+        <h3 style={{ fontSize: 16, fontWeight: 500, color: '#64748b', margin: 0 }}>Last Updated</h3>
+        <p style={{ fontSize: 16, fontWeight: 600, color: '#22223b', margin: 0 }}>{stats.last_updated}</p>
       </div>
     </div>
   );

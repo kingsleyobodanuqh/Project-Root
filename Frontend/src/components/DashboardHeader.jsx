@@ -39,33 +39,40 @@ function DashboardHeader() {
     fetchStats();
   }, []);
 
-  if (loading) return <p className="text-gray-500">Loading stats...</p>;
-  if (error) return <p className="text-red-500">Error: {error}</p>;
-  if (!stats) return <p className="text-gray-500">No stats available.</p>;
+  if (loading) return <p style={{ color: '#64748b' }}>Loading stats...</p>;
+  if (error) return <p style={{ color: '#ef4444' }}>Error: {error}</p>;
+  if (!stats) return <p style={{ color: '#64748b' }}>No stats available.</p>;
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-      <div className="bg-white shadow rounded p-4">
-        <h3 className="text-sm font-medium text-gray-500">Total Devices</h3>
-        <p className="text-2xl font-bold">{stats.total_devices}</p>
+    <div style={{
+      display: 'grid',
+      gridTemplateColumns: 'repeat(4, 1fr)',
+      gap: 24,
+      marginBottom: 32,
+      alignItems: 'stretch',
+      flexWrap: 'wrap',
+    }}>
+      <div className="card">
+        <h3 style={{ fontSize: 16, fontWeight: 500, color: '#64748b', margin: 0 }}>Total Devices</h3>
+        <p style={{ fontSize: 28, fontWeight: 700, margin: 0 }}>{stats.total_devices}</p>
       </div>
-      <div className="bg-white shadow rounded p-4">
-        <h3 className="text-sm font-medium text-gray-500">Critical Devices</h3>
-        <p className="text-2xl font-bold text-red-500">{stats.critical_devices}</p>
+      <div className="card">
+        <h3 style={{ fontSize: 16, fontWeight: 500, color: '#64748b', margin: 0 }}>Critical Devices</h3>
+        <p style={{ fontSize: 28, fontWeight: 700, color: '#ef4444', margin: 0 }}>{stats.critical_devices}</p>
       </div>
-      <div className="bg-white shadow rounded p-4">
-        <h3 className="text-sm font-medium text-gray-500">Avg Downtime</h3>
-        <p className="text-2xl font-bold">{stats.average_downtime_days} days</p>
+      <div className="card">
+        <h3 style={{ fontSize: 16, fontWeight: 500, color: '#64748b', margin: 0 }}>Avg Downtime</h3>
+        <p style={{ fontSize: 28, fontWeight: 700, margin: 0 }}>{stats.average_downtime_days} days</p>
       </div>
-      <div className="bg-white shadow rounded p-4">
-        <h3 className="text-sm font-medium text-gray-500">Last Update</h3>
-        <p className="text-sm">{stats.last_updated}</p>
+      <div className="card">
+        <h3 style={{ fontSize: 16, fontWeight: 500, color: '#64748b', margin: 0 }}>Last Update</h3>
+        <p style={{ fontSize: 16, margin: 0 }}>{stats.last_updated}</p>
       </div>
-
-      <div className="col-span-2 md:col-span-4 text-right">
+      <div style={{ gridColumn: '1 / -1', textAlign: 'right', marginTop: 8 }}>
         <button
           onClick={handleRunReport}
-          className="px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 shadow"
+          className="button"
+          style={{ padding: '12px 28px', fontSize: 16 }}
         >
           Run Report
         </button>

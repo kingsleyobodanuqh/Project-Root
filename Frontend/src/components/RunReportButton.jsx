@@ -24,15 +24,17 @@ const RunReportButton = () => {
   };
 
   return (
-    <div className="my-4">
+
+<div style={{ margin: '24px 0' }}>
       <button
         onClick={handleRunReport}
-        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-200"
+        className="button"
+        style={{ padding: '12px 28px', fontSize: 16 }}
         disabled={loading}
       >
         {loading ? "Generating..." : "Run Report"}
       </button>
-      {status && <p className="mt-2 text-sm text-gray-600">{status}</p>}
+      {status && <p style={{ marginTop: 12, fontSize: 14, color: '#64748b' }}>{status}</p>}
     </div>
   );
 };
