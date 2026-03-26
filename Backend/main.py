@@ -1,7 +1,7 @@
 # backend/main.py
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from supabase_config import supabase
+from database import get_db_connection
 import subprocess
 
 app = FastAPI()
@@ -15,8 +15,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-subprocess.run(["python", "report.py"], check=True)
-subprocess.run(["python", "report.py"], check=True)
+# Reports can be generated via the /generate-report endpoint
+# The global calls were removed to prevent blocking startup
 
 @app.get("/")
 def root():
@@ -32,18 +32,26 @@ def generate_report():
 
 @app.get("/reports/full")
 def get_full_report():
-    response = supabase.table("logs").select("*").order("recorded_at", desc=True).execute()
-    return response.data
+    conn = get_db_connection()
+    data = conn.execute("SELECT * FROM logs ORDER BY recorded_at DESC").fetchall()
+    conn.close()
+    return [dict(row) for row in data]
 
 @app.get("/reports/critical")
 def get_critical_report():
-    response = supabase.table("logs").select("*").gte("downtime", "0 d").lte("downtime", "15 d").order("recorded_at", desc=True).execute()
-    return response.data
+    conn = get_db_connection()
+    all_data = conn.execute("SELECT * FROM logs ORDER BY recorded_at DESC").fetchall()
+    conn.close()
+    critical = [dict(d) for d in all_data if "d" in dict(d)["downtime"] and int(dict(d)["downtime"].split()[0]) <= 15]
+    return critical
 
 @app.get("/reports/stats")
 def get_summary_stats():
-    all_data = supabase.table("logs").select("*").execute().data
-
+    conn = get_db_connection()
+    all_rows = conn.execute("SELECT * FROM logs ORDER BY recorded_at DESC").fetchall()
+    conn.close()
+    
+    all_data = [dict(row) for row in all_rows]
     total = len(all_data)
     critical = len([d for d in all_data if "d" in d["downtime"] and int(d["downtime"].split()[0]) <= 15])
 

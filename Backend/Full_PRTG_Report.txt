@@ -1,0 +1,61 @@
+Group 1,HikVision,2/27/2026 4:19:56 PM,26 d 18 h 11 m
+Group 1,Lib-Mall 2F-Sw2-Wifi,3/3/2026 5:31:20 PM,22 d 16 h 59 m
+Group 1,Lib-Mall 2F-Sw2-Wifi,Invalid date format,Unknown
+CCTV SWITCHES,Ahensan - Gate,3/26/2026 8:09:58 AM,0 d 2 h 21 m
+CCTV SWITCHES,Anglican Hostel - Junction,5/30/2025 11:32:06 AM,299 d 22 h 59 m
+CCTV SWITCHES,Anglican Hostel - Junction,4/30/2025 9:31:14 PM,329 d 13 h 0 m
+CCTV SWITCHES,Animal Science - Intersection,5/29/2025 4:48:48 PM,300 d 17 h 42 m
+CCTV SWITCHES,Ayeduase - Gate,3/23/2026 4:57:01 PM,2 d 17 h 34 m
+CCTV SWITCHES,Bomso - Gate,Invalid date format,Unknown
+CCTV SWITCHES,Bomso - Roundabout,Invalid date format,Unknown
+CCTV SWITCHES,COS/COS - Junction,Invalid date format,Unknown
+CCTV SWITCHES,Device-AP,3/18/2026 5:18:23 PM,7 d 17 h 13 m
+CCTV SWITCHES,Device-AP,2/6/2026 2:00:03 PM,47 d 20 h 31 m
+CCTV SWITCHES,Engineering - Gate,Invalid date format,Unknown
+CCTV SWITCHES,Gaza - Gate,5/29/2025 4:47:59 PM,300 d 17 h 43 m
+CCTV SWITCHES,Gyenyase,10/7/2025 11:58:13 AM,169 d 22 h 33 m
+CCTV SWITCHES,Hall 6 - Junction,6/9/2025 2:25:34 PM,289 d 20 h 5 m
+CCTV SWITCHES,Hall 6 - Junction,4/29/2025 8:51:55 PM,330 d 13 h 39 m
+CCTV SWITCHES,Hall 7 - Intersection,Invalid date format,Unknown
+CCTV SWITCHES,Independence Hall - Junction,3/17/2026 11:02:27 AM,8 d 23 h 28 m
+CCTV SWITCHES,Library - Intersection,3/25/2026 12:27:56 PM,0 d 22 h 3 m
+CCTV SWITCHES,Main Administration - Roundabout,Invalid date format,Unknown
+CCTV SWITCHES,Main Entrance - Gate,Invalid date format,Unknown
+CCTV SWITCHES,Mechanization -  Intersection,Invalid date format,Unknown
+CCTV SWITCHES,Paa Joe - Roundabout,Invalid date format,Unknown
+CCTV SWITCHES,Paa Joe Stadium,5/29/2025 4:48:09 PM,300 d 17 h 43 m
+CCTV SWITCHES,UPK - Roundabout,Invalid date format,Unknown
+VOIP SERVERS,FIRE SERVICE,3/26/2026 8:57:24 AM,0 d 1 h 34 m
+VOIP SERVERS,GJ VOIP SERVER,1/15/2026 6:03:35 PM,69 d 16 h 27 m
+VOIP SERVERS,PUMP HOUSE,3/1/2026 5:06:18 PM,24 d 17 h 25 m
+VOIP SERVERS,SECURITY INTELLIGENCE OFFICE,3/25/2026 6:19:48 PM,0 d 16 h 11 m
+VOIP SERVERS,UDS VOIP SERVER,Invalid date format,Unknown
+VOIP SERVERS,UESD VOIP SERVER,Invalid date format,Unknown
+VOIP SERVERS,UEW - M SERVER,Invalid date format,Unknown
+VOIP SERVERS,UEW VOIP SERVER,Invalid date format,Unknown
+VOIP SERVERS,UG VOIP SERVER,3/25/2026 12:44:30 PM,0 d 21 h 46 m
+VOIP SERVERS,UNER VOIP SERVER,Invalid date format,Unknown
+VOIP SERVERS,VCG VOIP SERVERS,Invalid date format,Unknown
+Data center prtg,DC Backup Sw,3/23/2026 1:03:06 AM,3 d 9 h 28 m
+Data center prtg,DC Backup Sw,3/23/2026 1:03:01 AM,3 d 9 h 28 m
+Faculty LAN,Herbal Medicine,3/26/2026 7:35:53 AM,0 d 2 h 55 m
+CCTV NVR,Basic School 1,Invalid date format,Unknown
+CCTV NVR,GRASSAG,Invalid date format,Unknown
+CCTV NVR,New KSB Outdoor 3,Invalid date format,Unknown
+Faculty Wifi,Animal_Science_Vodafone_Switch_2,3/19/2026 2:33:58 PM,6 d 19 h 57 m
+Faculty Wifi,Eng_Aud_Main_Vodafone_Switch,3/9/2026 4:34:58 PM,16 d 17 h 56 m
+Faculty Wifi,Eng_Elec_Faculty_Vodafone_Main_Switch_BLK,3/9/2026 4:34:56 PM,16 d 17 h 56 m
+Faculty Wifi,Graduate_School_Vodafone_Main_Switch,10/3/2024 9:28:09 AM,539 d 1 h 3 m
+Faculty Wifi,KATH_Vodafone_Sw_5_Simu_Center,3/23/2026 2:07:10 AM,3 d 8 h 24 m
+Faculty Wifi,SMS_Vodafone_Switch_1,11/1/2025 2:51:11 PM,144 d 19 h 40 m
+Faculty Wifi,SMS_Vodafone_Switch_2,11/1/2025 2:51:10 PM,144 d 19 h 40 m
+Group 12,new-KSB-Blk-C-Base-sw-1,Invalid date format,Unknown
+Group 12,new-KSB-Cn-sw-3,Invalid date format,Unknown
+Group 12,new-KSB-Dn-WiFi-sw-4,3/10/2026 12:09:49 PM,15 d 22 h 21 m
+SERVERS AND SWITCHES,10.200.10.35 - Host,12/16/2025 1:52:00 PM,99 d 20 h 39 m
+SERVERS AND SWITCHES,BTCAMP,3/19/2026 1:12:43 PM,6 d 21 h 18 m
+SERVERS AND SWITCHES,CABE PRTG,11/17/2025 5:40:43 PM,128 d 16 h 50 m
+SERVERS AND SWITCHES,CHS PRTG,1/24/2026 1:41:06 PM,60 d 20 h 50 m
+SERVERS AND SWITCHES,COE PRTG,3/20/2026 12:35:30 PM,5 d 21 h 56 m
+SERVERS AND SWITCHES,COHSS PRTG,3/26/2026 9:41:31 AM,0 d 0 h 50 m
+Group 18,Adenta Router,2/3/2026 5:43:56 PM,50 d 16 h 47 m

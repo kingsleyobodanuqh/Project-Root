@@ -1,2 +1,33 @@
-Critical Sites and Downtimes as at 11:55PM on Thursday 14 August 2025
+Critical Sites and Downtimes as at 10:31AM on Thursday 26 March 2026
+
+CCTV SWITCHES
+1. Ahensan - Gate = 0 d 2 h 21 m ago
+2. Ayeduase - Gate = 2 d 17 h 34 m ago
+3. Device-AP = 7 d 17 h 13 m ago
+4. Independence Hall - Junction = 8 d 23 h 28 m ago
+5. Library - Intersection = 0 d 22 h 3 m ago
+
+VOIP SERVERS
+1. FIRE SERVICE = 0 d 1 h 34 m ago
+2. SECURITY INTELLIGENCE OFFICE = 0 d 16 h 11 m ago
+3. UG VOIP SERVER = 0 d 21 h 46 m ago
+
+Data center prtg
+1. DC Backup Sw = 3 d 9 h 28 m ago
+2. DC Backup Sw = 3 d 9 h 28 m ago
+
+Faculty LAN
+1. Herbal Medicine = 0 d 2 h 55 m ago
+
+Faculty Wifi
+1. Animal_Science_Vodafone_Switch_2 = 6 d 19 h 57 m ago
+2. KATH_Vodafone_Sw_5_Simu_Center = 3 d 8 h 24 m ago
+
+Group 12
+1. new-KSB-Dn-WiFi-sw-4 = 15 d 22 h 21 m ago
+
+SERVERS AND SWITCHES
+1. BTCAMP = 6 d 21 h 18 m ago
+2. COE PRTG = 5 d 21 h 56 m ago
+3. COHSS PRTG = 0 d 0 h 50 m ago
 

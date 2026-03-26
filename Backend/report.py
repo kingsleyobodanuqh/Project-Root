@@ -1,7 +1,7 @@
 import requests
 import re
 from datetime import datetime
-from supabase_config import supabase
+from database import get_db_connection
 from datetime import datetime
 import sys
 import os
@@ -73,14 +73,13 @@ def write_combined_report(prtg_servers):
                     downtime_str = f"{downtime_days} d {downtime_hours} h {downtime_minutes} m"
                     report_file.write(f"{server['group_name']},{device},{last_up_date_str},{downtime_str}\n")
 
-                    supabase.table("logs").insert({
-                       "group_name": server["group_name"],
-                       "device": device,
-                       "last_up": last_up_date_str,
-                       "downtime": downtime_str,
-                       "status": "Down",
-                       "recorded_at": datetime.utcnow().isoformat()
-                    }).execute()
+                    conn = get_db_connection()
+                    conn.execute("""
+                        INSERT INTO logs (group_name, device, last_up, downtime, status, recorded_at)
+                        VALUES (?, ?, ?, ?, ?, ?)
+                    """, (server["group_name"], device, last_up_date_str, downtime_str, "Down", datetime.utcnow().isoformat()))
+                    conn.commit()
+                    conn.close()
                 else:
                     report_file.write(f"{server['group_name']},{device},Invalid date format,Unknown\n")
 
@@ -104,14 +103,13 @@ def generate_critical_sites_report(combined_report_path, critical_sites_report_p
                 critical_sites[group_name] = []
             critical_sites[group_name].append((device, last_up, downtime))
             # Insert into critical_logs table
-            supabase.table("critical_logs").insert({
-                "group_name": group_name,
-                "device": device,
-                "last_up": last_up,
-                "downtime": downtime,
-                "status": "Down",  # or use actual status if available
-                "recorded_at": datetime.utcnow().isoformat()
-            }).execute()
+            conn = get_db_connection()
+            conn.execute("""
+                INSERT INTO critical_logs (group_name, device, last_up, downtime, status, recorded_at)
+                VALUES (?, ?, ?, ?, ?, ?)
+            """, (group_name, device, last_up, downtime, "Down", datetime.utcnow().isoformat()))
+            conn.commit()
+            conn.close()
 
     with open(critical_sites_report_path, 'w') as critical_file:
         current_time = datetime.now().strftime("%I:%M%p on %A %d %B %Y")
