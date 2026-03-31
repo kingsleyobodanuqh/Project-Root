@@ -1,24 +1,75 @@
-Critical Sites and Downtimes as at 11:03AM on Friday 18 July 2025
+Critical Sites and Downtimes as at 08:46AM on Tuesday 31 March 2026
+
+Group 2
+1. Complex_PLodge (10.209.98.38) = 3 d 17 h 52 m ago
+2. Complex_PLodge (10.209.98.38) = 3 d 17 h 52 m ago
 
 CCTV SWITCHES
-1. Ayeduase - Gate = 0 d 18 h 15 m ago
-2. Independence Hall - Junction = 0 d 21 h 27 m ago
-3. Library - Intersection = 0 d 20 h 21 m ago
-4. Main Entrance - Roundabout = 4 d 10 h 2 m ago
+1. Ahensan - Gate = 5 d 0 h 36 m ago
+2. Ayeduase - Gate = 3 d 17 h 57 m ago
+3. Device-AP = 3 d 16 h 26 m ago
+4. Great Hall - Junction = 0 d 19 h 31 m ago
+5. Independence Hall - Junction = 4 d 17 h 54 m ago
+6. KNUST Transport Yard = 1 d 11 h 28 m ago
+7. Library - Intersection = 5 d 20 h 18 m ago
+8. Unity Hall - Junction = 0 d 19 h 30 m ago
 
 VOIP SERVERS
-1. UG VOIP SERVER = 0 d 18 h 51 m ago
+1. COLLEGE OF ART AND BIULT ENVIRONMENT (CABE) = 1 d 0 h 9 m ago
+2. SECURITY INTELLIGENCE OFFICE = 5 d 14 h 26 m ago
+3. THECA PROJECT SMS UCM = 0 d 16 h 47 m ago
+4. UG VOIP SERVER = 1 d 2 h 11 m ago
+5. UNIVERSITY HALL = 3 d 16 h 21 m ago
 
 RESIDENTIAL WIFI
-1. SENIOR_STAFF_SW_1 = 5 d 0 h 14 m ago
+1. RPG_SWITCH 2 = 4 d 5 h 1 m ago
+2. RPG_Switch1 = 5 d 3 h 0 m ago
 
-CCTV NVR
-1. VC Lodge = 4 d 23 h 14 m ago
+Faculty LAN
+1. Allied ~ RS2(5/18) = 2 d 20 h 24 m ago
+2. New KSB Blk E = 4 d 19 h 11 m ago
+
+MASTERCARD SWITCHES
+1. MCF-RW-CAB0-GF-SW-1 = 4 d 4 h 40 m ago
+2. MCF-RW-CAB1-1F-SW-1 = 4 d 17 h 2 m ago
+3. MCF-RW-CAB3-3F-SW-2 = 4 d 5 h 24 m ago
 
 Faculty Wifi
-1. Animal_Science_Main_Vodafone_Switch_2 = 0 d 16 h 45 m ago
-2. Eng_Lab_Vodafone_Switch_Energy_Center_Near KSB = 3 d 2 h 12 m ago
+1. Accra_Kwabenya_Campus_Switch_1 = 0 d 14 h 40 m ago
+2. Accra_Kwabenya_Campus_Switch_1 = 0 d 14 h 40 m ago
+3. Accra_Kwabenya_Campus_Switch_2 = 0 d 14 h 40 m ago
+4. Animal_Science_Vodafone_Switch_2 = 0 d 22 h 20 m ago
+5. KATH_Vodafone_Core_Sw = 0 d 14 h 40 m ago
+6. KATH_Vodafone_Sw_2_Gold = 0 d 14 h 39 m ago
+7. KATH_Vodafone_Sw_3_Laing = 0 d 14 h 40 m ago
+8. KATH_Vodafone_Sw_4_Valco = 0 d 14 h 40 m ago
+9. KATH_Vodafone_Sw_4_Valco = 0 d 14 h 40 m ago
+10. KATH_Vodafone_Sw_5_Simu_Center = 0 d 14 h 39 m ago
+
+Group 12
+1. New KSB Blk E = 4 d 19 h 12 m ago
+2. New KSB Blk E = 4 d 19 h 12 m ago
+3. New KSB Blk E = 4 d 19 h 11 m ago
+4. new-KSB-En-sw-3 = 4 d 19 h 11 m ago
+5. new-KSB-En-sw-4 = 4 d 19 h 12 m ago
+6. new-KSB-En-WiFi-sw-2 = 4 d 19 h 12 m ago
+
+RESIDENTIAL LAN
+1. MasterCard-Main-Switch ~ RS2(2/42) = 4 d 17 h 3 m ago
+
+SERVERS AND SWITCHES
+1. BTCAMP = 11 d 19 h 33 m ago
+2. CHS PRTG = 0 d 1 h 23 m ago
+3. COHSS PRTG = 4 d 17 h 40 m ago
 
 ADMIN NETWORKS
-1. Fire Service & Sports CBS = 0 d 0 h 4 m ago
+1. Pri_Class Six = 0 d 1 h 23 m ago
+2. Pri_Sick Bay = 0 d 1 h 23 m ago
+3. Primary_School_New Block Sw = 0 d 1 h 23 m ago
+
+ISPs
+1. Kwabenya Main Switch = 0 d 14 h 39 m ago
+
+Group 20
+1. IndeceHall_Main_Sw = 3 d 13 h 19 m ago
 
